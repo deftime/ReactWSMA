@@ -14,7 +14,20 @@ let appData = {
   savings: false
 }
 
-// let pointEx = prompt('Стаття расходов?', '');
-appData.expenses[prompt('Стаття расходов?', '')] = prompt('Во сколько обойдется?', '');
+for (let i = 0; i < 2; i++) {
+  let ex = prompt('Стаття расходов?', '');
+  let how = prompt('Во сколько обойдется?', '');
 
-alert(`Ваш бюджет на день - ${parseInt(money / 30)}`);
+  if (ex != '' && how != '' && ex != null && how != null && ex.length < 10 ) {
+    appData.expenses[ex] = how;
+  } else {
+    alert('Data is invalid!');
+    i--;
+    continue;
+  }
+
+}
+
+
+appData.budgPerDay = appData.budget / 30;
+alert(`Ваш бюджет на день - ${parseInt(budgPerDay)}`);

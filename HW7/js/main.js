@@ -1,0 +1,14 @@
+let start = document.getElementById('start');
+let rezLines = document.querySelectorAll('div[class$=value]');
+let mustExp = document.getElementsByClassName('expenses-item');
+let startMust = document.querySelector('.expenses-item-btn');
+let startOpt = document.querySelector('.optionalexpenses-btn');
+let startCount = document.querySelector('.count-budget-btn');
+let optExp = document.querySelectorAll('.optionalexpenses-item');
+let optIncome = document.querySelector('input.choose-income');
+let saveCheck = document.querySelector('#savings');
+let saveSum = document.querySelector('#sum');
+let savePercent = document.querySelector('#percent');
+let rezYear = document.querySelector('.time-data .year-value');
+let rezMonth = document.querySelector('.time-data .month-value');
+let rezDay = document.querySelector('.time-data .day-value');
